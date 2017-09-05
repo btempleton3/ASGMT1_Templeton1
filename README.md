@@ -5,17 +5,26 @@
 <style>
 .thing {
 	position:absolute; 
-	left: Opx;
-	top: Opx; 
+	left: 0px;
+	top: 0px; 
 	border: 2px;
 	border-style: double;
-	background-color: white; 
+	background-color: cyan; 
 	margin: 5px;
 	padding: 5px; 
 }
 </style>
-<script>
-		var facts = [["China","Beijing",false],["India","New Delhi",false],["European Union","Brussels",false],["United States","Wasington, DC",false],["Indonesia","Jakarta",false],["Brazil","Brasilia",false],["Russia","Moscow",false],["Japan","Tokyo",false],["Mexico","Mexico City",false],["Germany","Berlin",false],["Turkey","Ankara",false],["South Africa","Pretoria",false],["Canada","Ottawa",false]];
+<script type="text/javascript">
+		var facts = [
+			["Clemson","Tiger",false],
+			["Lincoln","Cornhusker",false],
+			["Gainesville","Gator",false],
+			["Los Angeles","Bruin",false],
+			["Seattle","Husky",false],
+			["Lexington","Wildcat",false],
+			["Fort Collins","Ram",false],
+			["Honolulu","Rainbow Warrior",false]
+			];
 		var thingelem;
 		var nq = 4;
 		var elementinmotion;
@@ -102,8 +111,8 @@ elementinmotion.style.top
 if (this.id.substring(1)==
 elementinmotion.id.substring(1)) {
 elementinmotion.style.
-backgroundColor = "gold";
-this.style.backgroundColor = "gold";
+backgroundColor = "green";
+this.style.backgroundColor = "green";
 document.f.out.value = "RIGHT";
 document.f.score.value = String
 (1+Number(document.f.score.value));
@@ -119,9 +128,8 @@ document.f.score.value = String
 </script>
 </head>
 <body onLoad="init();">
-<h1>G20 Countries and
-Capitals</h1><br/>Click on country or capital and then click on corresponding
-capital or country.<p>Reload for new game.<form name="f" >Action:<input name="out" type=
+<h1>Mascot Matching</h1><br/>Click on a football team's mascot or a city and then click on corresponding
+city or mascot.<p>Reload for new game.<form name="f" >Action:<input name="out" type=
 "text" value="RIGHT OR WRONG"/>Score: <input name="score" type=
 "text" value="0"/></form>
 </p>
